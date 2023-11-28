@@ -1,0 +1,56 @@
+SELECT (DISTINCT) col1, col2 + IFNULL(col3, 0), MIN/MAX/COUNT/AVG/SUM(col4), col5 AS Col5, col6 AS "col 6", t.col7
+
+(INTO newtable (IN externaldb))
+
+FROM tab1, tab2 as t, tab2 as t2
+WHERE condition
+
+INNER JOIN/LEFT JOIN/RIGHT JOIN/FULL OUTER JOIN tab3
+ON tab1.ID = tab2.ID;
+
+UNION / UNION ALL
+
+GROUP BY col1
+HAVING condition
+
+WHERE EXISTS (statement)
+
+WHERE col1 = ANY/ALL (statement)
+
+ORDER BY col1 (ASC)/DESC
+LIMIT number;
+----------------------------------------------------------------------------
+operators:
+=, >....
+BETWEEN, LIKE, IN, AND, OR, NOT
+
+conditions:
+col1 IS (NOT) NULL
+----------------------------------------------------------------------------
+CASE
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    WHEN conditionN THEN resultN
+    ELSE result
+END;
+----------------------------------------------------------------------------
+CREATE PROCEDURE func_name @var1 vartype, ...
+AS
+SELECT * FROM tab_name
+GO;
+
+EXEC func_name;
+----------------------------------------------------------------------------
+INSERT INTO tab_name (col1, col2, col3)
+VALUES (val1, val2, val3); / (statement)
+
+UPDATE tab_name
+SET col1 = val1, col2= val2
+WHERE condition;
+
+DELETE FROM tab_name
+WHERE condition;
+----------------------------------------------------------------------------
++ second part of sql tutorial
+
+https://www.w3schools.com/sql/sql_primarykey.asp

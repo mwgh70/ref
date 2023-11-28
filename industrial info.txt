@@ -1,0 +1,171 @@
+income statement (Accurual method)
+Revenue -  Expenses = Profit (Loss)
+
+Operating revenue
+- Direct operating costs
+--------
+= Gross profit / (loss)
+- indirect operating costs (general & admin, selling & marketing, operating D&A)
+--------
+= operating proft / (loss)
+- indirect non-operating costs (interest, tax expense)
+--------
+net profit
+
+
+cash flow statement (Cash method)
+closing cash - opening cash = net increase / decrease in cash
+
++ cash flow from operating activities
++ cash flow from investing activities (investments / long term assets)
++ cash flow from financing activities (debt(liability), dividends(equity))
+= net increase / decrease in cash
+
+Direct method: cash recieved / payed, interest, taxes for operating activities
+Indirect method: net profit / loss from income statement -> add back D&A / adjust for movement in working capital (inventory, recievables, payables)
+
+
+balance sheet
+assets = liabilities + equity
+
+assets
+    current assets
+        + cash
+        + accounts recievable
+        + other recievable
+        + prepaid expenses
+    = total current assets
+
+    non-current assets
+        + property, plant and equipment (tangible)
+        + intangible assets
+    = total non current assets
+= total assets
+
+liabilities
+    current liabilities
+        + accounts payable
+        + taxes payable
+        + accured expenses
+        + deferred revenue
+    = total current liabilities
+
+    non-current liabilties
+        + long term loans
+    = total non-current liabilties
+= total liabilities
+
+equity
+    + capital contributions
+    + retained earnings
+= total equity
+
+
+Financial statement metrics / ratios
+Profitability ratios
+    margin ratios = profit / revenue
+        GPM = gross profit / revenue
+        OPM = operating profit / revenue
+        NPM = net profit / revenue
+    return ratios = net profit / assets or equity or capital employed (total assets - current liabilties (ignores long debt))
+        Return on assets ROA = net profit / total assets
+        Return on equity ROE = net profit / total equity
+        Return on Capital Empoyed ROCE = net profit / Capital employed (may also use operating profit instead)
+Liquidity ratios
+    current ratio = current assets / current liabilties
+    Cash ratio = cash / current liabilties
+    quick ratio = liquid assets (current assets except inventory and prepaid expenses) / current liabilties
+Efficiency ratios
+    turnover ratio = one line item(income statement) / related line-item(balance sheet)
+        inventory turnover = cost of goods sold / inventory
+        recieveables turnover = revenue / accounts recieveable
+        asset turnover = renvenue / total assets
+        payables turnover  = cost of goods sold / account payable
+    cash conversion cycle = days sales of inventory + days sales outstanding + days payable outstanding
+        DSI = (inventory / cost of goods sold) * 365
+        DSO = (accounts receivale / revenue) * 365
+        DPO = (accounts payable / cost of goods sold) * 365
+Leverage ratios
+    Balance sheet ratios
+        B/S ratio = total liabilties / total assets or equity
+            Debt to assets DTA ratio = total liabilties / total assets
+            DTE = total liabilities / total equity
+    Income statement ratios
+        Interest ratios I/S = type of profit / type of interest
+            interest coverage = operating profit / interest expense
+            total debt service = interst + principle
+            Debt service coverage ratio DSCR = EBITDA / total debt service
+Price ratios
+    Earnings ratios
+        earnings per share = net profit (- preferred dividends) / common shares outstanding
+        P/E price to earnings ratio = share price / earnings per share
+        PEG price / earnings-to-growth ratio = P/E / EPS growth (expected earnings per share)
+    dividend ratios
+        DPS dividends per share = dividends paid (- special dividends) / common share outstanding
+        dividend yield = dividends per share / share price
+        dividend payout = divdendds paid / net profit
+Market Capitalization = number of shares outstanding * current market share price
+
+
+Valuation methods
+
+CAPM - Capital asset pricing model - expected return of investment
+ - risk free rate (10-year treasury note)
+ - Beta: relationship between market and investment (market has 1.0)
+ - expected return of market (historical, say 9%)
+
+WACC - weighted average cost of capital
+    calculates cost of capital of a Company
+        cost of debt / preferred shares / equity
+
+ 
+DCF - discounted cash flow model
+
+
+
+Financial institution types
+
+Central banks
+    FED, manage all banks in their respective country, set monetary policy
+retail banks
+    provides product and services to individual consumers
+
+    checking and savings account
+    mortgages
+    personal loans
+    debit and credit cards
+
+    private banks
+        subset of retail banking aimed at high net worth individuals
+commercial banks
+    same but for businesses
+
+    business banking
+        for small businesses
+        business checkings and savings account, working capital management, merchant services (card payment), line of credit or loan
+investment banks
+    for large publicaly traded corporations or institutional investors
+    for complex transactions such as:
+        corporate finance
+            mergers & acquisitions
+            advisory services
+        capital markets
+            underwriting
+            research
+            sales and trading
+
+universal banks
+    offer all kinds of banking, retail, commercial, investment
+large bank
+    equal but typicaly no inveestment banking
+investment banks
+    international in nature
+community banks
+    retail / small business banking, focused on region
+online / digital banks
+credit unions / building societies / saving & loans association
+    serves a specific demographic
+
+https://www.youtube.com/watch?v=RxxEmF0ewFY
+https://www.youtube.com/watch?v=kt9h4e9F_gA
+https://www.youtube.com/watch?v=GjER52oDwr0

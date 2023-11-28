@@ -1,0 +1,118 @@
+1. Understanding the case background, 2. Asking clarifying questions
+
+What do they cover:
+- Industries
+    • Retail
+    • Consumer packaged goods
+    • Financial services
+    • Energy
+    • Education
+    • Healthcare
+    • Technology
+
+3. Structuring a framework, 4. Starting the case
+
+Types of Case interviews (Business situations):
+- Profitability Case (Improving profitability)
+    - An electric car manufacturer has recently been experiencing a decline in profits. What should they do?
+        - Drivers of profit
+            - Has there been a decline revenue?
+            - Has there been an increase in costs?
+        - Customer needs and preferences
+            - Have customer needs changed?
+            - Have customer purchasing habits changed?
+            - Do customers view our company differently?
+        - Competitors
+            - Have new competitors entered the market?
+            - Have existing competitors made any recent strategic moves?
+        - Market trends
+            - Are there new technologies impacting the market?
+            - Are there new regulations impacting the market?
+- Market Entry (Entering a new market)
+    - Coca-Cola is considering entering the beer market in the United States. Should they enter?
+        - Market attractiveness
+            - What is the market size?
+            - What is the market growth rate?
+            - What are average profit margins?
+        - Competitive landscape
+            - How many competitors are there?
+            - How much share do they have?
+            - Do competitors have any competitive advantages?
+        - Company capabilities
+            - Are there significant capability gaps?
+            - Are there significant synergies we can leverage?
+        - Profitability
+            - What are the expected revenues?
+            - What are the expected costs?
+            - How long will it take to break even?
+- Growth Strategy (Growing revenues)
+    - Facebook is looking to grow its revenues. What are the best ways to do this?
+        - Growth
+            - Inorganic growth
+            - Organic growth
+                - New revenue sources
+                - Existing revenue soruces
+                    - Increase average price
+                    - Increase volume
+- Pricing Case
+    - How much should Apple price its latest iPhone for?
+        - Pricing based on costs
+            - How much does it cost to produce this product?
+            - What is the profit margin that the company is trying to achieve?
+        - Pricing based on value added
+            - What benefits does this product provide to customers?
+            - How much value does this provide to customers?
+        - Pricing based on competition
+            - How much do competitors price their products for?
+            - How does our product compare to competitors' products?
+- Merger and Acquisition Case (Acquiring a company)
+    - A large pharmaceutical company is looking to acquire a small startup that specializes in cardiovascular drug discovery. Should this acquisition be made?
+        - Market attractiveness
+            - What is the market size?
+            - What is the market growth rate?
+            - What are average profit margins?
+        - Company attractiveness
+            - How much market share does the company have?
+            - Is the company profitable?
+            - Does the company have any competitive advantages?
+        - Synergies
+            - Are there potential revenue synergies?
+            - Are there potential cost synergies?
+        - Financial considerations
+            - Is the acquisition price reasonable?
+            - What is the expected return on the acquisition?
+- New Product (Launching a new product)
+    - Proctor & Gamble is looking to develop a revolutionary consumer product that makes it easier for users to remove stains from carpets. Should they develop and launch this product?
+        - Market attractiveness
+            - What is the market size?
+            - What is the market growth rate?
+            - What are average profit margins?
+        - Product
+            - Are customer needs being met?
+            - Is the product superior to competitors' products?
+        - Company capabilities
+            - Does the company have the design and production expertise?
+            - Does the company have the right distribution channels?
+        - Profitability
+            - What are expected revenues?
+            - What are expected costs?
+General Frameworks:
+    - Market Attractiveness
+    - Competitive Landscape
+    - Company Capabilities / Attractiveness
+    - Customer Segment / Needs
+    - Profitability / Financials
+    - Strategic Alternatives
+    - Risk & Mitigations
+
+5, 6. Solving / answering quantitative / qualitative problems
+
+- Quantitative (Make estimation or assumptions, Perform calculations)
+    - Market sizing
+    - Profit
+    - Charts & graphs
+- Qualitative
+    - Brainstorming
+    - Business option (Use business acumen to have discussions)
+
+7. Delivering a recommendation

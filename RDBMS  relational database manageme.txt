@@ -1,0 +1,173 @@
+RDBMS : relational database management system
+sql keywords are not case sensitive
+semicolons at the end of each statement may be optional
+
+SELECT col_name FROM tab_name; (selects)
+SELECT DISTINCT col_name FROM tab_name; (returns unique values of specified column)
+
+SELECT col_name FROM tab_name
+WHERE condition; (returns based on condition)
+
+operators in conditions:
+=, >, etc..,
+BETWEEN (Price BETWEEN 50 AND 60),	(can use text with combination to order by) (can be used with dates too) (review date syntax)
+LIKE (City LIKE 's%'), (can use or and and within the wildcard condition) (review wildcard syntax)
+IN (City IN ('Paris','London')), 	WHERE col_name (NOT) IN (value1, value2, ...)/(SELECT STATEMENT); (if value of specified column is included within the in clause)
+AND (WHERE condition1 AND condition2 AND condition3 ...;)
+OR (WHERE condition1 OR condition2 OR condition3 ...;),
+NOT (WHERE NOT condition;)
+
+use brackets to combine these operators
+
+ORDER BY col1 (ASC)/DESC, col2 (ASC)/DESC, etc..	(orders output val)
+
+INSERT INTO tab_name (col1, col2, col3)
+VALUES (val1, val2, val3);	(inserts values by specified columns)
+
+SELECT col_name		(returns where the specified columns values are (not) null)
+FROM tab_name
+WHERE col1 IS (NOT) NULL;
+
+SELECT col1 + col2, col1 + IFNULL(col2, 0) 			(also can put columns made with operators) (ifnull uses set value to replace nulls)
+FROM tab_name							(COALESCE and IFNULL are the same)
+
+
+UPDATE tab_name	()	(updates all values that fit the condition) (omitting where will apply to all values)
+SET col1 = val1, col2= val2
+WHERE condition;
+
+DELETE FROM tab_name 	(deleting values specified by condition) (omitting where will delete all values)
+WHERE condition;
+
+SELECT col_name
+FROM tab_name
+WHERE condition
+LIMIT number;	(show head of n)
+
+SELECT MIN/MAX(col_name)
+FROM tab_name
+WHERE condition;	(shows the min/max value of specified column) (where cannot be used with aggregate fuctions)
+
+SELECT COUNT/AVG/SUM(col_name)	(same as above with function implied by name) (aggregate functions, including min and max)
+FROM tab_name
+WHERE condition;
+
+SELECT col1 AS col_name1, col2 AS col_name2 (use [] or "" if the alias uses spaces in between) (review combining columns)
+FROM tab_name;
+
+SELECT o.col1, o.col2, c.col3
+FROM tab1 AS c, tab2 AS o	(using aliases for tables)
+
+SELECT tab1.ID, tab2.col1, tab2.col2	(inner join two tables based on a column) (join refers to inner join)
+FROM tab1
+(INNER JOIN)(LEFT/RIGHT JOIN)(FULL OUTER JOIN) tab2
+ON tab1.ID = tab2.ID;
+
+(inner) join : returns matching from both tables, intersection
+left (outer) join : all records from the left table and matched records from the right
+right (outer) join : opposite
+full (outer) join : union
+
+SELECT col_name		(self joining)
+FROM tab1 T1, tab2 T2
+WHERE condition;
+
+SELECT column_name(s) FROM tab1		(shows two tables toghether, union all does not remove duplicates)
+UNION / UNION ALL
+SELECT column_name(s) FROM tab2;
+
+SELECT COUNT(ID), Country 	(noramly used with aggregate functions)
+FROM tab1
+GROUP BY Country
+HAVING COUNT(ID) > 5; 		(used instead of where as aggregate functions were used)
+
+SELECT col_name
+FROM tab1
+WHERE EXISTS
+(SELECT col_name FROM tab2 WHERE condition);	(returns true if they exist and return matching records)
+
+SELECT ProductName
+FROM Products
+WHERE ProductID = ANY/ALL		(returns true if any/all value matches and retuns matching records)
+  (SELECT ProductID
+  FROM OrderDetails
+  WHERE Quantity = 10);
+
+SELECT *				(make a new table then copy return values to the new table)
+INTO newtable (IN externaldb)		(a return of no values makes a new empty table)
+FROM oldtable
+WHERE condition;
+
+
+INSERT INTO tab2 (col1, col2, col3, ...)	(same but inserts) (types must match)
+SELECT col1, col2, col3, ...
+FROM tab1
+WHERE condition;
+
+CASE					(if else statement) (if one matches return and break) (if no match then return null)
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    WHEN conditionN THEN resultN
+    ELSE result
+END;
+
+SELECT OrderID, Quantity,						(include column called quantitytext where its values are specified strings)
+CASE 
+	WHEN Quantity > 30 THEN 'The quantity is greater than 30'
+	WHEN Quantity = 30 THEN 'The quantity is 30'
+	ELSE 'The quantity is under 30'
+END AS QuantityText
+FROM OrderDetails;
+
+SELECT CustomerName, City, Country
+FROM Customers
+ORDER BY
+(CASE
+    WHEN City IS NULL THEN Country
+    ELSE City
+END);
+
+
+CREATE PROCEDURE func_name		(can store procedures to be used anytime,  like functions)
+AS
+SELECT * FROM tab_name
+GO;
+
+EXEC func_name;
+
+CREATE PROCEDURE SelectAllCustomers @City nvarchar(30), @PostalCode nvarchar(10)	(using function parameters)
+AS
+SELECT * FROM Customers WHERE City = @City AND PostalCode = @PostalCode
+GO;
+
+
+--single line comments
+/*
+multi line comments
+*/
+
+---------------------------------------------------------------------------------------------------
+
+CREATE DATABASE databasename;
+DROP DATABASE testDB;
+DROP TABLE table_name;
+
+BACKUP DATABASE databasename
+TO DISK = 'filepath';
+(WITH DIFFERENTIAL;)
+
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....
+);
+
+CREATE TABLE new_table_name AS
+    SELECT column1, column2,...
+    FROM existing_table_name
+    WHERE ....;
+
+
+
+
